@@ -2,12 +2,12 @@ package carRental;
 
 public class Client 
 {
-	String surname;
-	String name;
-	String FlightNumber;
+	private String surname;
+	private String name;
+	private String FlightNumber;
 	private String ID;
-	String tel;
-	String email; //(save for later)
+	private String tel;
+	private String email; //(save for later)
 
 	
 	//constructors

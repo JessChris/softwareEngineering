@@ -1,32 +1,49 @@
+//The costs for the extras was taken from the Extras tab in
+//the excel file. According to the file, gps is cost *20, etc..
 package carRental;
 
 public class Cost extends Reservation 
 {
-	double totalc;//total cost
+	double totalCost;//total cost
 	double cost;//car category cost
 	
-	public static void main(String[] args) 
+	double costTemp=0; //placeholder
+	
+	public void classCosts()
 	{
 		if(Reservation.isFdw_cdw()==true)
 		{
-			//totalcost=+
+			//totalCost==+ 
 		}
+		
 		if(Reservation.gps==true) 
 		{
-			//totalcost=+
+			costTemp=20*cost;
+			totalCost+=costTemp;
+			costTemp=0;
 		}
+		
 		if(Reservation.babyseat==true) 
 		{
-			//totalcost=+
+			costTemp=15*cost;
+			totalCost+=costTemp;
+			costTemp=0;
 		}
+		
 		if(Reservation.highbooster==true) 
 		{
-			//totalcost=+
+			costTemp=15*cost;
+			totalCost+=costTemp;
+			costTemp=0;
 		}
+		
 		if(Reservation.booster==true) 
 		{
-			//totalcost=+
+			costTemp=15*cost;
+			totalCost+=costTemp;
+			costTemp=0;
 		}
-
+				
 	}
+
 }

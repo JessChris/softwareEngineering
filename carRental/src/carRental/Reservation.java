@@ -2,9 +2,9 @@ package carRental;
 
 public class Reservation extends Client
 {
-	private String cc;//Car Category
-	private String comm;//comments
-	private static boolean fdw_cdw;
+	protected String cc;//Car Category
+	protected String comm;//comments
+	static boolean fdw_cdw;
 	static boolean gps;
 	static boolean babyseat;
 	static boolean highbooster;

@@ -2,14 +2,18 @@ package carRental;
 
 import java.util.Scanner;
 
-public class demoRental extends Reservation {
+public class demoRental extends Reservation 
+{
 
+	@SuppressWarnings("static-access")
 	public static void main(String[] args) 
 	{
 		 //array of clients as an example
 		Reservation clientA=new Reservation();
 		int choice=0;//menu option selector
-		try (Scanner key = new Scanner(System.in)) {
+		
+		try (Scanner key = new Scanner(System.in)) 
+		{
 			//Menu Navigator
 			System.out.println("Welcome to the main menu. Please choose: ");
 			do
@@ -19,12 +23,15 @@ public class demoRental extends Reservation {
 				System.out.println("2. New Client");
 				System.out.println("-1. Exit (choices will NOT be saved)");
 				choice= key.nextInt();
-				if (choice==1){
+				
+				if (choice==1)
+				{
 					//Show client details
 					for(int i=0;i<100;i++)
 					System.out.println(clientA);
 				}
-				if(choice==2) {
+				if(choice==2) 
+				{
 					//New reservation + new client
 					System.out.println("Enter Surename: ");
 					clientA.surname=key.nextLine();
@@ -38,6 +45,7 @@ public class demoRental extends Reservation {
 					clientA.tel=key.nextLine();
 					System.out.println("Enter your mail: ");
 					clientA.tel=key.nextLine();
+					
 					System.out.println("Choose your Car Category:");//Button
 					System.out.println("Other comments: ");
 					clientA.comm=key.nextLine();
